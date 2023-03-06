@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Peça de Fruta</title>
+    <!-- INSERIR ICON TITLE NO WEBSITE -->
+    <link rel="icon" href="assets/ui-elements/LOGO-ICON.jpg">
+
+    <!-- IMPORTAÇAO DO CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- IMPORTAÇAO AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- IMPORTAÇAO DO ION ICONS -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!-- IMPORTAÇAO DO SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+
+<body onload="init()">
+
+
+    <main>
+
+        <div class="container">
+
+
+            <div class="row">
+
+                <div class="col-58">
+
+
+                    <img class="logo img-fluid" src="assets/ui-elements/LOGO-ICON.jpg" alt="Logo">
+                    <h1 data-aos="fade-up" data-aos-duration="2000" class="font-600">
+                        Fruta fresca diariamente <br> no seu escritório
+
+                    </h1>
+
+                    <h2 class="font-600" data-aos="fade-up" data-aos-delay="100" data-aos-duration="2000">Ofereça
+                        bem-estar<br>
+                        aos seus colaboradores</h2>
+                    <p class="bullets">
+                        <img class="seta" src="assets/ui-elements/seta.svg"> &nbsp Aumenta níveis de motivação e
+                        produtividade;<br>
+                        <img class="seta" src="assets/ui-elements/seta.svg"> &nbsp Reduz tempo de intervalo p/
+                        snacks;<br>
+                        <img class="seta" src="assets/ui-elements/seta.svg"> &nbsp Revitaliza a imagem da empresa.<br>
+                    </p>
+
+                    <div>
+                        <img data-aos="fade-right" data-aos-duration="2000" class="fundo-1 img-fluid "
+                            src="assets/imgs/fundo.png" alt="Fundo">
+
+                    </div>
+
+
+
+                </div> <!-- END COL-58 -->
+
+
+                <div id="col-42" class="col-42" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="form-style-5">
+                        <form>
+                            <fieldset>
+                                <legend class="cabaz">Faça a sua Encomenda</legend>
+                                <input type="nome" name="field1" placeholder="Nome e Apelido *">
+                                <input type="email" name="field2" placeholder="Email *">
+                                <input type="telefone" field2" placeholder="telefone *">
+                                <input type="empresa" field2" placeholder="Empresa *">
+
+                                <label class="cabaz">Cabaz</label>
+
+                                <select id="cabaz label=" cabaz" class="custom-input">
+                                    <option value="0">S</option>
+                                    <option value="1">M</option>
+                                    <option selected="selected" value="2">L</option>
+
+
+                                </select>
+
+
+
+                                <input id="modalBtn" class="button" value="Encomendar">
+                            </fieldset> <!-- END FILDSET-->
+
+
+
+                        </form> <!-- END FORM-->
+
+
+
+                        <div id="simpleModal" class="modal">
+                            <div class="modal-content">
+                                <span class="closeBtn">&times;</span>
+                                <h3>Encomenda submetida com sucesso!</h3>
+                                <p>Irá ser contactado pela Peça de fruta nas próximas 48h.</p>
+                                <p>Obrigado pela sua preferência!</p>
+
+                            </div>
+                        </div>
+
+                    </div> <!-- END FORM-STYLE-5 -->
+                </div> <!-- END COL-42-->
+
+            </div> <!-- END ROW -->
+
+        </div> <!-- END CONTAINER -->
+
+    </main>
+
+
+
+    <section id="comoFunciona" class="como-funciona">
+        <div class="container">
+            <h3 class="text-center font-600">Como funciona</h3>
+
+            <div class="row text-center">
+
+                <div class="col-3-funciona">
+                    <h4 class="font-600">Encomendar</h4>
+
+                    <p>
+                        Indique-nos qual o cabaz
+                        pretendido.</p>
+
+
+                </div> <!-- END COL-3 -->
+
+                <div class="col-3-funciona">
+                    <h4 class="font-600">Entregar</h4>
+
+                    <p>
+                        Todas as segundas, entregaremos
+                        no seu escritório o cabaz .
+                    </p>
+
+                </div> <!-- END COL-3 -->
+
+                <div class="col-3-funciona">
+                    <h4 class="font-600">Recolher</h4>
+
+                    <p>
+                        Todos os cestos são recolhidos
+                        na próxima entrega.
+                    </p>
+
+                </div> <!-- END COL-3 -->
+
+            </div> <!-- END ROW -->
+
+        </div> <!-- END CONTAINER -->
+
+
+    </section> <!-- END COMO FUNCIONA -->
+
+
+
+    <div>
+        <img data-aos="zoom-out-right" data-aos-duration="1500" class="fundo-2 img-fluid"
+            src="assets/ui-elements/fundo-2@2x.svg" alt="fundo">
+
+
+    </div>
+
+
+    <section class="cabazes ">
+        <div class="container">
+
+
+            <h3 class="text-center font-600">Os cabazes</h3>
+            <p class="text-center">Selecione o cabaz que melhor<br>
+                se adequa à sua empresa.</p>
+            <div class="row text-center">
+                <div class="col-3">
+                    <div class="tamanhos">
+                        <img src="assets/ui-elements/S@2x.svg" alt="S">
+
+                    </div>
+
+                    <button id="peq" class="botao-tamanhos ">Encomendar</button>
+
+                </div><!-- END COL-3 -->
+
+                <div class="col-3">
+                    <div class="tamanhos">
+                        <img src="assets/ui-elements/M@2x.svg" alt="M">
+
+                    </div>
+
+                    <button id="med" class="botao-tamanhos">Encomendar</button>
+
+                </div><!-- END COL-3 -->
+
+                <div class="col-3">
+                    <div class="tamanhos">
+                        <img src="assets/ui-elements/L@2x.svg" alt="L">
+
+                    </div>
+                    <button id="gra" class="botao-tamanhos">Encomendar</button>
+
+                </div><!-- END COL-3 -->
+
+            </div> <!-- END ROW-1 -->
+
+        </div> <!-- END CONTAINER -->
+
+
+    </section><!-- END SECTION CABAZES -->
+
+    <div>
+        <img data-aos="zoom-out-left" data-aos-duration="1500" class="fundo-3 img-fluid"
+            src="assets/ui-elements/fundo3@2x.svg" alt="fundo">
+
+
+    </div>
+
+    <section class="empresa">
+        <!--  SECTION EMPRESA -->
+
+        <div class="container">
+            <h3 class="text-center font-600">A nossa empresa</h3>
+
+
+            <div class="row text-center">
+                <div class="col-3">
+                    <div class="descricao">
+                        <img src="assets/ui-elements/icon-mao@2x.svg" alt="Mão">
+                        <h4 class="font-600">Solidariedade</h4>
+                        <p>Colaboramos com a Associação Sol,<br>
+                            que acolhe crianças infectadas com<br>
+                            o vírus HIV, a quem doamos toda<br>
+                            a fruta restante.</p>
+                    </div>
+
+
+                </div> <!--  SECTION COL-3 -->
+
+                <div class="col-3">
+                    <div class="descricao">
+                        <img src="assets/ui-elements/icon-mapa@2x.svg" alt="MAPA">
+                        <h4 class="font-600">Nacional</h4>
+                        <p>Fazemos questão de privilegiar o<br>
+                            peqeno produtor portugês, nomeadamente<br>
+                            das zonas rurais e interior do país contribuindo<br>
+                            assim para manter a produção nacional.</p>
+                    </div>
+
+
+                </div> <!--  END COL-3 -->
+
+                <div class="col-3">
+                    <div class="descricao">
+                        <img src="assets/ui-elements/icon-experiencia@2x.svg" alt="Experiência">
+                        <h4 class="font-600">Experiência</h4>
+                        <p>A peça de fruta surge de uma família<br>
+                            com mais de 40 anos de experiência<br>
+                            na distribuição de fruta e legumes.</p>
+                    </div>
+
+
+                </div> <!--  END COL-3 -->
+
+            </div><!--  SECTION ROW -->
+
+        </div> <!--  SECTION CONTAINER-->
+
+
+    </section> <!-- END SECTION CABAZES -->
+
+    <div>
+        <img data-aos="zoom-out-right" data-aos-duration="1500" class="fundo-4 img-fluid"
+            src="assets/ui-elements/fundo-4@2x.svg" alt="fundo">
+
+
+    </div>
+
+    <section class="area-testemunhos">
+        <h3 class="text-center font-600">O que dizem sobre nós</h3>
+
+        <div class="wrapper">
+
+            <div class="cards">
+                <div class="card">
+                    <img id="person" src="assets/imgs/person-1.png">
+                    <p class="text-center text">Fringilla est ullamcorper eget nulla facilisi.
+                        Senectus et netus et malesuada fames ac.
+                        Massa massa ultricies mi quis hendrerit dolor.</p>
+                    <h4 class="text-center font-600">José Poiares</h4>
+                    <p class="text-center">HR Recrutador</p>
+
+                </div>
+
+                <div class="card">
+                    <img id="person" src="assets/imgs/person-2.png">
+                    <p class="text-center text">Fringilla est ullamcorper eget nulla facilisi.
+                        Senectus et netus et malesuada fames ac.
+                        Massa massa ultricies mi quis hendrerit dolor.</p>
+                    <h4 class="text-center font-600">Jorge Tavares</h4>
+                    <p class="text-center">PHP Developer</p>
+
+                </div>
+
+                <div class="card">
+                    <img id="person" src="assets/imgs/person-3.png">
+                    <p class="text-center text">Fringilla est ullamcorper eget nulla facilisi.
+                        Senectus et netus et malesuada fames ac.
+                        Massa massa ultricies mi quis hendrerit dolor.</p>
+                    <h4 class="text-center font-600">Joana Castro</h4>
+                    <p class="text-center">Fotógrafa</p>
+
+                </div>
+
+            </div> <!-- END CARDS -->
+
+
+
+        </div> <!-- END WRAPPER -->
+        <div class="text-center know-more">
+            <button id="modalBtn botaoMais" data-link="comoFunciona" class="botao-mais">Saber Mais</button>
+
+        </div>
+
+
+
+    </section> <!-- END SECTION TESTEMUNHOS -->
+
+    <div>
+        <img data-aos="zoom-out-left" data-aos-duration="1500" class="fundo-5 img-fluid"
+            src="assets/ui-elements/fundo-5@2x.svg" alt="fundo">
+
+
+    </div>
+
+    <section class="perguntas">
+
+        <div class="container-faq">
+            <h3 class="text-center font-600">Perguntas frequentes</h3>
+            <div class="accordion">
+                <div class="acordion-item" id="question1">
+                    <a class="acordion-link" href="#question1">
+                        Será mais barato adquirir fruta numa mercearia?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>É possível comprar fruta a um preço inferior numa mercearia próxima, mas não encontrará a
+                            mesma qualidade de serviço e da fruta, nem o mesmo profissionalismo que encontra ao
+                            escolher a Peça de Fruta.
+                        </p>
+
+                    </div>
+                </div> <!-- END PERGUNTA 1 -->
+
+                <div class="acordion-item" id="question2">
+                    <a class="acordion-link" href="#question2">
+                        Como posso encomendar cestos de fruta?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>Pode fazê-lo por telefone ou e-mail (geral@pecadefruta.com).
+                            Diga-nos quais os dias e horário que mais lhe convém, a quantidade
+                            e tamanho dos cestos de fruta que se adequam à sua empresa.
+                            A Peça de Fruta fará a entrega da melhor fruta fresca no seu escritório.
+                        </p>
+
+                    </div>
+                </div> <!-- END PERGUNTA 2 -->
+
+                <div class="acordion-item" id="question3">
+                    <a class="acordion-link" href="#question3">
+                        É exigida uma regularidade nas entregas?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>Para garantirmos um melhor serviço e um preço competitivo,
+                            as encomendas devem ser efectuadas numa base regular, preferencialmente
+                            numa base semanal, embora também possam ser bi-semanais ou mensais.
+                            Não obstante, aceitamos encomendas não regulares. Contacte-nos para podermos
+                            analisar a sua situação em concreto. Também poderemos aconselhá-lo sobre as
+                            quantidades de fruta ideais.
+                        </p>
+
+                    </div>
+                </div> <!-- END PERGUNTA 3 -->
+
+                <div class="acordion-item" id="question4">
+                    <a class="acordion-link" href="#question4">
+                        E se o dia de entrega coincidir com um feriado?
+                        <i class="icon ion-md-add"></i>
+                        <i class="icon ion-md-remove"></i>
+                    </a>
+                    <div class="answer">
+                        <p>Salvo se nos indicar o contrário, entregaremos
+                            a encomenda no dia imediatamente a seguir.
+                        </p>
+
+                    </div>
+                </div> <!-- END PERGUNTA 3 -->
+
+            </div> <!-- END ACCORDION -->
+
+            <div class="text-center">
+                <button id="modalBtn botaoMais" data-link="comoFunciona" class="botao-mais">Saber Mais</button>
+
+            </div>
+
+        </div> <!-- END CONTAINER FAQ -->
+
+
+    </section> <!-- END SECTION PERGUNTAS -->
+
+    <div>
+        <img class="trator" src="assets/ui-elements/trator 1.svg" alt="trator">
+
+    </div>
+
+    <div>
+        <img class="fundo-6 img-fluid" src="assets/ui-elements/fundo-6@2x.svg" alt="fundo">
+
+
+        <footer>
+
+            <div class="direitos">
+                <p class="footer-p">
+                    Fale connosco!<br>
+                    Telefone: 219572921<br>
+                    Email Geral: geral@pecadefruta.com
+
+                </p>
+                <p>
+                    2021 Peça de Fruta. Todos os direitos reservados.
+
+                </p>
+
+            </div>
+
+        </footer>
+
+        <script src="js/anime.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+
+        <!-- Swiper JS -->
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
+
+
+</body>
